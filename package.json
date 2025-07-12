@@ -2,10 +2,11 @@
   "name": "skill-siksha",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://aaishmaa.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base='./'",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
