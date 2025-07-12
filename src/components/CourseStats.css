@@ -1,0 +1,383 @@
+.course-stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.header-section {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.subtitle {
+  color: #444;
+  font-size: 24px;
+  margin-bottom: 12px;
+  margin: 0 0 12px 0;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.main-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #1da077;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+  height: 450px;
+}
+
+/* Main Card */
+.main-card {
+  background: #c33241;
+  border-radius: 30px;
+  padding: 30px;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.view-all-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-end;
+  width: fit-content;
+  color: rgba(255, 255, 255, 0.9);
+  gap: 8px;
+}
+
+.view-all-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.tech-icons {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 60px 0;
+}
+
+.icon-item {
+  width: 65px;
+  height: 65px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.icon-item:nth-child(1) {
+  transform: rotate(-8deg);
+}
+
+.icon-item:nth-child(2) {
+  transform: rotate(5deg);
+}
+
+.icon-item:nth-child(3) {
+  transform: rotate(-3deg);
+}
+
+.icon-item:nth-child(4) {
+  transform: rotate(8deg);
+}
+
+.react-icon {
+  background: #61dafb;
+}
+
+.js-icon {
+  background: #f7df1e;
+}
+
+.js-square {
+  background: #f7df1e;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+  position: relative;
+}
+
+.js-square span:first-child {
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  font-size: 12px;
+}
+
+.js-square span:last-child {
+  font-size: 16px;
+}
+
+.vue-icon {
+  background: #4fc08d;
+}
+
+.vue-logo {
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  background: #4fc08d;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.figma-icon {
+  background: linear-gradient(135deg, #ff6654 0%, #a259ff 50%, #1abcfe 100%);
+}
+
+.figma-logo {
+  width: 24px;
+  height: 32px;
+  background: linear-gradient(135deg, #ff6654 0%, #a259ff 50%, #1abcfe 100%);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  position: relative;
+}
+
+.figma-logo::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+}
+
+.course-count {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: auto;
+  padding: 20px;
+  background: #c33241;
+  border-radius: 15px;
+  margin-bottom: 0;
+}
+
+.count-number {
+  font-size: 120px;
+  font-weight: 800;
+  line-height: 0.8;
+  color: #f9ebec;
+  margin-top: 20px;
+}
+
+.plus {
+  font-size: 48px;
+  font-weight: 800;
+  color: #f9ebec;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 0.8;
+  margin-left: -4px;
+}
+
+.count-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-left: 4px;
+}
+
+.count-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f9ebec;
+  margin-bottom: 4px;
+  line-height: 1.1;
+}
+
+.count-subtitle {
+  font-size: 14px;
+  color: #f9ebec;
+  line-height: 1.4;
+  opacity: 0.9;
+  white-space: pre-line;
+}
+
+/* Stat Cards */
+.stat-card {
+  background: #f9ebec;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.upcoming-card {
+  background: #f9ebec;
+}
+
+.ongoing-card {
+  background: #f9ebec;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.card-text {
+  transform: rotate(-90deg);
+  transform-origin: center;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  max-width: 300px;
+}
+
+.stat-card .card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #C33241;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.stat-card .card-subtitle {
+  font-size: 10px;
+  color: #C33241;
+  text-align: center;
+  line-height: 1.2;
+  opacity: 0.8;
+  max-width: 120px;
+  word-wrap: break-word;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-number-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card-number {
+  font-size: 120px;
+  font-weight: 800;
+  color: #c33241;
+  line-height: 0.8;
+  position: relative;
+}
+
+.card-plus {
+  font-size: 40px;
+  font-weight: 900;
+  color: #c33241;
+  position: absolute;
+  top: 0;
+  right: -25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 15px;
+  }
+
+  .main-card {
+    min-height: 300px;
+  }
+
+  .stat-card {
+    min-height: 200px;
+  }
+
+  .main-title {
+    font-size: 32px;
+  }
+
+  .count-number {
+    font-size: 80px;
+  }
+
+  .card-number {
+    font-size: 60px;
+  }
+
+  .tech-icons {
+    gap: 10px;
+  }
+
+  .icon-item {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card-text {
+    transform: translateY(-50%) rotate(0deg);
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  .card-number-section {
+    position: relative;
+    right: 0;
+    top: 0;
+    transform: none;
+  }
+}
